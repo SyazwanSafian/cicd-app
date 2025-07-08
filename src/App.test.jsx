@@ -11,7 +11,7 @@ test("App form submission", async () => {
     const submitButton = screen.getByTestId("submitButton");
 
     //Type a valid email into the input
-    await userEvent.type(emailInput, 'abuya');
+    await userEvent.type(emailInput, 'abuya@gmail.com');
 
     //Check if button is disabled
     expect(submitButton.disabled).toBe(false);
